@@ -69,4 +69,29 @@ console.log("pictureInPictureEnabled:",document.pictureInPictureEnabled)
 console.log(document.createComment('This is a not-so-secret comment in your document'))
 console.log(document.open())
 console.log(document.close());
-console.log(document.createAttribute());
+// console.log(document.createAttribute());
+
+
+function myFuncAfter(){
+    alert('afterprint')
+}
+
+let container = document.createElement('div');
+let p = document.createElement('p');
+let span = document.createElement('span')
+container.appendChild(p)
+p.appendChild(span)
+// p.after(span,'text')
+span.before('paragraph tag')
+console.log(container)
+span.append('span tag');
+console.log(container.textContent);
+let inputs = document.getElementById('url');
+let vie = inputs.getAttribute('id');
+
+console.log(inputs)
+
+let noContext = document.getElementById('noContextMenu');
+noContext.addEventListener('contextmenu', function(event){
+    event.preventDefault();
+})

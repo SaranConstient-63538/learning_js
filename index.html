@@ -7,12 +7,18 @@
    
     <title>Learning</title>
 </head>
-<body >
+<body onunload="myFuncAfter()">
     <h1>The Document Object</h1>
     <iframe width="300px" height="300px" id="myframe"></iframe>
     <p id="para">This is paragraph</p>
     <p id="demo"></p>
     <p id="demo1"></p>
+    <input type="week" />
+    <input type="text" id="url">
+    <button onclick="openFullScreen()">open Full Screen</button>
+    <p id="noContextMenu">The context menu has been disabled on this paragraph.</p>
+    <p>But it has not been disabled on this one.</p>
+
        <!-- <script src="./basic.js"></script> -->
        <!-- <script src="./array.js"></script> -->
        <!-- <script src="./date.js"></script> -->
